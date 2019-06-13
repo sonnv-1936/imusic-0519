@@ -26,6 +26,8 @@ gem "ratyrate", "1.2.2.alpha"
 gem "sass-rails", "5.0.7"
 gem "turbolinks", "5.2.0"
 gem "uglifier", "4.1.20"
+gem "will_paginate", "3.1.7"
+gem "will_paginate-bootstrap4", "0.2.2"
 
 group :development, :test do
   gem "byebug", "11.0.1", platforms: %i(mri mingw x64_mingw)
