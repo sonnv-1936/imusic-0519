@@ -1,3 +1,4 @@
+//= require sweetalert2/dist/sweetalert2.all.min.js
 //= require i18n
 //= require i18n.js
 //= require i18n/translations
