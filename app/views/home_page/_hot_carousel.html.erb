@@ -1,0 +1,14 @@
+<div class="carousel-item hot_carousel <%= hot_counter.zero? ? "active" : "" %>"
+  style="background-image: url(<%= url_for hot.cover %>)">
+  <%= link_to hot, class: "stretched-link" do %>
+    <div class="carousel-caption d-none d-md-block">
+      <h3>
+        <% if hot.is_a? Album %>
+          <%= hot.name %>
+        <% elsif hot.is_a? Track %>
+          <%= hot.title %>
+        <% end %> - <%= hot.artist_name %>
+      </h3>
+    </div>
+  <% end %>
+</div>
