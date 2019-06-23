@@ -186,6 +186,17 @@ en:
       lyrics: Lyrics
       tracks: Tracks
       users: Users
+  favourites:
+    index:
+      no_favourites: You don't have any favourites yet!
+      albums: Albums
+      tracks: Tracks
+  searches:
+    index:
+      no_result: Not result match!
+      track: Track
+      album: Album
+      artist: Artist
   comments:
     comment_data:
       edit: Edit
@@ -251,5 +262,6 @@ en:
       log_in: Log in
       sign_up: Sign up
       admin_page: Admin page
+      search: Search for Tracks, Albums, Artists
     footer:
       copyright_html: Copyright &copy; IMusic 2019
