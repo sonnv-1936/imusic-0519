@@ -1,8 +1,12 @@
 vi:
   swal:
+    success:
+      favourite_added: Đã thêm vào danh sách yêu thích!
+      favourite_removed: Đã xóa khỏi danh sách yêu thích!
     error:
       content_blank: Nội dung bình luận không thể để trống!
       destroyed_failed: Xóa bình luận không thành công!
+    ok: OK
   admin:
     resource:
       not_found: Không tìm thấy tài nguyên!

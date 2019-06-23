@@ -1,8 +1,12 @@
 en:
   swal:
+    success:
+      favourite_added: Added to favourite list!
+      favourite_removed: Removed from favourite list!
     error:
       content_blank: Content can't be blank!
       destroyed_failed: Failed to delete comment!
+    ok: OK
   admin:
     resource:
       not_found: Resource not found!
