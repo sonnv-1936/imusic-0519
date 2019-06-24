@@ -1,0 +1,9 @@
+Swal.fire({
+  title: I18n.t('swal.success.lyric_created'),
+  type: 'success', showCancelButton: false,
+  confirmButtonText: I18n.t('swal.ok')
+});
+
+$('#contribute_lyric_form').hide();
+$('#show_contribute_lyric_form').show();
+$(`#lyric_content`).val('');

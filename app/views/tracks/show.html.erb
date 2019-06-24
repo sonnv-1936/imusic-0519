@@ -63,6 +63,21 @@
       <div class="pb-3 text-gray-600">
         <%== contributor_helper @support.track.approved_lyric %></div>
       <div><%= simple_format lyric_helper(@support.track.approved_lyric&.content) %></div>
+
+      <%= button_tag t(".contribute_lyric"), type: "button",
+        id: "show_contribute_lyric_form", class: "btn btn-primary" %>
+
+      <%= form_for :lyric, url: contribute_lyrics_path, method: :post,
+        remote: true, html: {id: "contribute_lyric_form"} do |form| %>
+        <%= form.text_area :content, class: "form-control" %>
+        <%= form.submit t(".contribute"), class: "btn btn-primary mt-3",
+          id: "submit_lyric" %>
+        <%= hidden_field_tag "lyric[track_id]", @support.track.id %>
+        <%= hidden_field_tag "lyric[user_id]", current_user.id %>
+        <%= button_tag t(".cancel"), type: "button", id: "cancel_contribute_lyric",
+          class: "btn btn-secondary mt-3" %>
+      <% end %>
+
       <hr class="my-4">
 
       <h4 class="mb-4"><%= t ".total_comment", count: number_with_delimiter(@support

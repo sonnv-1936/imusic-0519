@@ -6,6 +6,7 @@ en:
     error:
       content_blank: Content can't be blank!
       destroyed_failed: Failed to delete comment!
+      lyric_created: Lyric created successfully! Your lyric need to wait to be approved by administrator!
     ok: OK
   admin:
     resource:
@@ -213,6 +214,9 @@ en:
       no_lyrics: This track does not have lyrics yet!
       contributor: Contribute by %{user}
       latest_tracks: Latest Tracks
+      contribute_lyric: Contribute lyric
+      contribute: Contribute
+      cancel: Cancel
   artists:
     index:
       artists: Artists

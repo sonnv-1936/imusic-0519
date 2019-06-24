@@ -6,6 +6,7 @@ vi:
     error:
       content_blank: Nội dung bình luận không thể để trống!
       destroyed_failed: Xóa bình luận không thành công!
+      lyric_created: Đóng góp lời bài hát thành công! Đang chờ quản trị kiểm duyệt!
     ok: OK
   admin:
     resource:
@@ -213,6 +214,9 @@ vi:
       no_lyrics: Chưa có lời bài hát cho bài hát này!
       contributor: Đóng góp bởi %{user}
       latest_tracks: Bài hát mới nhất
+      contribute_lyric: Đóng góp lời bài hát
+      contribute: Đóng góp
+      cancel: Hủy
   artists:
     index:
       artists: Nghệ sĩ

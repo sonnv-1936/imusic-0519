@@ -16,7 +16,7 @@
   <tbody>
     <% @admin_lyrics.each do |lyric| %>
       <tr>
-        <td><%= simple_format lyric.content %></td>
+        <td><%= simple_format limit_lyric_helper(lyric.content) %></td>
         <td>
           <div class="<%= lyric_approval_helper lyric.approved %>">
             <%= t ".#{lyric.approved}_approval" %>

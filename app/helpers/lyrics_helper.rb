@@ -15,4 +15,9 @@ module LyricsHelper
   def lyric_helper content
     content ||= t(".no_lyrics")
   end
+
+  def limit_lyric_helper lyric
+    return lyric if lyric.length < Settings.lyric.content.limit
+    lyric.first(Settings.lyric.content.limit) << "..."
+  end
 end

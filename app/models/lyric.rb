@@ -1,5 +1,6 @@
 class Lyric < ApplicationRecord
   LYRIC_PARAMS = %i(content approved user_id track_id).freeze
+  CONTRIBUTE_LYRIC_PARAMS = %i(content user_id track_id).freeze
 
   belongs_to :user
   belongs_to :track
