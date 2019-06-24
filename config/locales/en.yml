@@ -1,4 +1,8 @@
 en:
+  swal:
+    error:
+      content_blank: Content can't be blank!
+      destroyed_failed: Failed to delete comment!
   admin:
     resource:
       not_found: Resource not found!
@@ -169,10 +173,22 @@ en:
       lyrics: Lyrics
       tracks: Tracks
       users: Users
+  comments:
+    comment_data:
+      edit: Edit
+      delete: Delete
+    form:
+      edit: Edit
+      cancel: Cancel
   tracks:
     show:
       categories: "Categories: %{categories}"
       album: "Album:"
+      total_comment: "%{count} comment(s)"
+      lyrics: Lyrics
+      no_lyrics: This track does not have lyrics yet!
+      contributor: Contribute by %{user}
+      latest_tracks: Latest Tracks
   artists:
     index:
       artists: Artists
