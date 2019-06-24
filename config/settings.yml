@@ -19,7 +19,7 @@ track:
   small_list: 4
   featured_list: 5
   title:
-    max_length: 30
+    max_length: 100
   year:
     minimum: 0
     start: 1800

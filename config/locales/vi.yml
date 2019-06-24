@@ -225,6 +225,7 @@ vi:
       country: "Quốc gia: %{country}"
       albums: Albums
       tracks: Bài hát
+      description: Giới thiệu
   albums:
     show:
       categories: "Thể loại: %{categories}"
@@ -250,6 +251,9 @@ vi:
     registrations:
       new:
         name: Tên
+      edit:
+        change_password: Đổi mật khẩu
+        cancel: Hủy
     shared:
       omniauth:
         or: hoặc
@@ -273,6 +277,7 @@ vi:
       sign_up: Đăng kí
       admin_page: Trang quản trị
       search: Tìm kiếm bài hát, album, nghệ sĩ
+      change_password: Đổi mật khẩu
     footer:
       copyright_html: "&copy; Bản quyền thuộc về IMusic 2019"
   errors:

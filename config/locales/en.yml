@@ -225,6 +225,7 @@ en:
       country: "Country: %{country}"
       albums: Albums
       tracks: Tracks
+      description: Description
   albums:
     show:
       categories: "Categories: %{categories}"
@@ -250,6 +251,9 @@ en:
     registrations:
       new:
         name: Name
+      edit:
+        change_password: Change password
+        cancel: Cancel
     shared:
       omniauth:
         or: or
@@ -267,5 +271,6 @@ en:
       sign_up: Sign up
       admin_page: Admin page
       search: Search for Tracks, Albums, Artists
+      change_password: Change password
     footer:
       copyright_html: Copyright &copy; IMusic 2019

@@ -13,3 +13,4 @@ class Artist < ApplicationRecord
   validates :avatar, attached: true, content_type: Settings.artist.avatar.file_type,
     size: {less_than: Settings.artist.avatar.max_size.megabytes}
 end
+

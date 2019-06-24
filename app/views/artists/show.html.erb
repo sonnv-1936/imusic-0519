@@ -11,6 +11,9 @@
     </div>
   </div>
 
+  <h3 class="my-5"><%= t ".description" %></h3>
+  <p><%= simple_format @support.artist.description %></p>
+
   <h3 class="my-5"><%= t ".albums" %></h3>
   <div class="row">
     <%= render partial: "albums/album", collection: @support.artist_albums %>

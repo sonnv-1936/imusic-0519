@@ -28,6 +28,8 @@
                 <%= link_to t(".admin_page"), admin_root_path,
                   class: "dropdown-item f-1rem" %>
               <% end %>
+              <%= link_to t(".change_password"), edit_user_registration_path,
+                class: "dropdown-item f-1rem" %>
               <%= link_to t(".log_out"), destroy_user_session_path, method: :delete,
                 class: "dropdown-item f-1rem" %>
             </div>

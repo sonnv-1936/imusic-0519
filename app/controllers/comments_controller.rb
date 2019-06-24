@@ -5,11 +5,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new comment_params
 
-    respond_to do |format|
-      if not comment.save
-        format.js {render "created_failed"}
-      end
-    end
+    comment.save
   end
 
   def show; end
@@ -17,19 +13,11 @@ class CommentsController < ApplicationController
   def edit; end
 
   def update
-    respond_to do |format|
-      if not comment.update comment_params
-        format.js {render "updated_failed"}
-      end
-    end
+    comment.update comment_params
   end
 
   def destroy
-    respond_to do |format|
-      if not comment.destroy
-        format.js {render "destroyed_failed"}
-      end
-    end
+    comment.destroy
   end
 
   private
